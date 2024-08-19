@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Lesson_6_3 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите длину прямоугольника: ");
+        int dl = scanner.nextInt();
+        System.out.print("Введите ширину прямоугольника: ");
+        int sh = scanner.nextInt();
+        System.out.print("Размер прямоугольника: " + dl + "х" + sh + "  начнём рисовать!\n");
+        scanner.close();
+
+        method1(sh);
+
+        System.out.println("");
+
+        for (int j = 1; j <= dl; j++) {
+            System.out.print("|");
+
+            for (int k = 1; k <= dl; k++) {
+                System.out.print(" ");
+            }
+            for (int m = 1; m == 1; m++) {
+                System.out.print("|");
+            }
+            System.out.println("");
+        }
+
+        method1(sh);
+    }
+    static void method1 (int sh){
+        for (int i = 1; i <= sh; i++) {
+            System.out.print("_");
+        }
+    }
+}
